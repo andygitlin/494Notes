@@ -48,6 +48,7 @@
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lemma}[thm]{Lemma}
 \newtheorem{fact}[thm]{Fact}
+\newtheorem{prop}[thm]{Propostion}
 
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}
@@ -76,7 +77,7 @@
 \begin{document}
 \title{Math 494: Honors Algebra II}
 \maketitle
-\section{January 1, 2017}
+\section{January 1, 2017} %Pranav
 \noindent \textbf{Rings}
 \begin{defn} \hspace{0.5cm}
     \begin{enumerate}[a)]
@@ -124,7 +125,7 @@
         \item $\QQ, \RR, \CC$ are fields
         \item $\HH = \{a + bi + cj + dk \mid a,b,c,d \in \RR \}$ where $i^2 = j^2 = k^2 = ijk = -1$ are
         called the \textbf{Hamiltonian Quaternions} and are a skew-field
-        \item $\mathcal{C}^{\infty}_{C}(\RR) = $ functions on $\RR$ with compact
+        \item $\mathcal{C}_{C}(\RR) = $ functions on $\RR$ with compact
         support \\
         ($\supp(f) = \overline{\{x \in \RR \mid f(x) \neq 0\}}$) is a
         commutative ring without unity
@@ -193,7 +194,7 @@ a commutative ring with 1.
     Let $R$ be a ring. A subset $S \subset R$ is called a subring if
     \begin{itemize}
         \item $S$ is a subgroup of $(R, +, 0)$
-        \item $a \cdot b \in S$ for all $a \cdot b \in S$.
+        \item $a \cdot b \in S$ for all $a, b \in S$.
         \item $1 \in S$.
     \end{itemize}
 \end{defn}
@@ -203,7 +204,7 @@ a commutative ring with 1.
         (reason: if $1 \in I$, then $a \cdot 1 \in I$ for all $a \in R$, meaning $I = R$)
         \item $I = \{0\}, I = R$ are always ideals.
         \item In rings without unity, the 2 notions align closer: ideal becomes a special
-        case of substring as $1 \in S$ condition is dropped.
+        case of subring as $1 \in S$ condition is dropped.
     \end{itemize}
 \end{rmk}
 \begin{ex} \hspace{0.5cm}
